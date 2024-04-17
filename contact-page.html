@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
+  <link rel="stylesheet" href="contact-page.css">  
+  <link rel="stylesheet" href="coding-laptop.css">
+</head>
+<body>
+  <div class="header">
+  <div class="container">
+      <div class="navbar">         <!-- navbar starting -->
+      <div class="logo">
+          <a href="index.html"><img src="images/logo.png" width="125px"></a>
+      </div>
+      <nav>
+          <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="guide-page.html">Product Guide</a></li>
+              <li><a href="contact-page.html">Contact Us</a></li>
+              <li><a href="account-page.html">Account</a></li>
+          </ul>
+      </nav>
+
+  <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+  <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+  
+  </div>
+</div> 
+</div>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch with Us</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="07792871-58aa-449d-8cd9-aaccb93cd342">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/right_img.png" alt="">i
+        </div>
+    </div>
+
+          <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png" >
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" alt="">
+                        <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Technology Accessible to the Many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <Li>Return Policy</Li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>X-Twitter</li>
+                            <Li>Instagram</Li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2024 - PC Builder</p>
+            </div>
+        </div>
+<!-- footer sections end here -->
+
+<!-- //JS for toggle menu -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+
+</body>
+</html>

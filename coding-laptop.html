@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Laptop Requirements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
+  <link rel="stylesheet" href="coding-laptop.css">  
+</head>
+<body>
+  <div class="header">
+  <div class="container">
+      <div class="navbar">         <!-- navbar starting -->
+      <div class="logo">
+          <a href="index.html"><img src="images/logo.png" width="125px"></a>
+      </div>
+      <nav>
+          <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="guide-page.html">Product Guide</a></li>
+              <li><a href="contact-page.html">Contact Us</a></li>
+              <li><a href="account-page.html">Account</a></li>
+          </ul>
+      </nav>
+
+  <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+  <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+  
+  </div>
+</div> 
+</div>
+  <link rel="stylesheet" href="coding-laptop.css">
+  <header>
+    <h1>Coding Laptop Requirements</h1>
+  </header>
+  <main>
+    <section id="purpose">
+      <h2>Purpose</h2>
+      <p>A laptop suitable for coding and programming tasks.</p>
+    </section> 
+    <section id="specs">
+      <h2>Specifications</h2>
+      <ul>
+        <li>Minimum 8GB RAM</li>
+        <li>Intel Core i5 processor or equivalent</li>
+        <li>256GB SSD storage or higher</li>
+        <li>Integrated or dedicated GPU (optional)</li>
+      </ul>
+    </section>
+    <section id="battery">
+      <h2>Battery Life</h2>
+      <p>At least 6 hours of battery life for on-the-go coding.</p>
+    </section>
+    <section id="portability">
+      <h2>Portability</h2>
+      <p>Lightweight and portable design for easy transportation.</p>
+    </section>
+    <section id="display">
+      <h2>Display</h2>
+      <p>Full HD (1920x1080) resolution for clear coding experience.</p>
+    </section>
+    <section id="keyboard">
+      <h2>Keyboard and Trackpad</h2>
+      <p>Ergonomic keyboard and responsive trackpad for comfortable typing and navigation.</p>
+    </section>
+    <section id="ports">
+      <h2>Ports</h2>
+      <p>Include a variety of ports such as USB, HDMI, and SD card slot for connectivity.</p>
+    </section>
+    <section id="budget">
+      <h2>Budget</h2>
+      <p>Set a reasonable budget based on desired specifications and features.</p>
+    </section>
+    <section id="brand">
+      <h2>Brand Reputation</h2>
+      <p>Choose reputable brands known for quality and reliability.</p>
+    </section>
+  </main>
+          <!-- footer section starts -->
+
+          <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png" >
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" alt="">
+                        <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Technology Accessible to the Many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <Li>Return Policy</Li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>X-Twitter</li>
+                            <Li>Instagram</Li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2024 - PC Builder</p>
+            </div>
+        </div>
+<!-- footer sections end here -->
+
+<!-- //JS for toggle menu -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+</body>
+</html>

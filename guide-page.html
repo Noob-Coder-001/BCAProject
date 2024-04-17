@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>PC-Guide</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaquery.css">
+        <link rel="stylesheet" href="guide-page.css">  
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">         <!-- navbar starting -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="guide-page.html">Product Guide</a></li>
+                    <li><a href="contact-page.html">Contact Us</a></li>
+                    <li><a href="account-page.html">Account</a></li>
+                </ul>
+            </nav>
+
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        
+        </div>
+     </div> 
+</div>
+        <header>
+            <h1>Buying Guide</h1>
+        </header>
+    
+        <div class="guide-nav">
+            <a href="#gaming">Gaming Laptops</a>
+            <a href="#commercial">Commercial Laptops</a>
+            <a href="#coding">Coding Laptops</a>
+        </div>
+
+        <section id="gaming">
+            <h2>Gaming Laptops</h2>
+            <p>If you're a gaming enthusiast, here's what to look for in a gaming laptop:</p>
+            <ul>
+                <li>Powerful graphics card</li>
+                <li>High refresh rate display</li>
+                <li>Plenty of RAM</li>
+                <li>Good cooling system</li>
+            </ul>
+            <a href="gaming-laptop.html" class="btn">More Details &#8594;</a>
+        </section>
+    
+        <section id="commercial">
+            <h2>Commercial Laptops</h2>
+            <p>For business and productivity, consider these features:</p>
+            <ul>
+                <li>Long battery life</li>
+                <li>Reliable performance</li>
+                <li>Portable and lightweight design</li>
+                <li>Security features like fingerprint sensor</li>
+            </ul>
+            <a href="commercial-laptop.html" class="btn">More Details &#8594;</a>
+        </section>
+    
+        <section id="coding">
+            <h2>Coding Laptops</h2>
+            <p>For programming and development, prioritize these specs:</p>
+            <ul>
+                <li>Fast processor</li>
+                <li>Plenty of RAM for multitasking</li>
+                <li>Comfortable keyboard</li>
+                <li>High-resolution display</li>
+            </ul>
+            <a href="coding-laptop.html" class="btn">More Details &#8594;</a>
+        </section>
+    
+  
+        <!-- footer section starts -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png" >
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" alt="">
+                        <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Technology Accessible to the Many.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <Li>Return Policy</Li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>X-Twitter</li>
+                            <Li>Instagram</Li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2024 - PC Builder</p>
+            </div>
+        </div>
+<!-- footer sections end here -->
+
+<!-- //JS for toggle menu -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+<!-- End OF Homepage -->
+</body>
+</html>
